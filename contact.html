@@ -18,72 +18,69 @@
     <h1 class="text-center py-4 mb-0">AlyraMag</h1>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog-single.html">Travel</a>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                aria-expanded="false">Categories</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./category.html">Food</a></li>
-                <li><a class="dropdown-item" href="./category.html">Travel</a></li>
-                <li><a class="dropdown-item" href="./category.html">Lifestyle</a></li>
-                <li><a class="dropdown-item" href="./category.html">Business</a></li>
-                <li><a class="dropdown-item" href="./category.html">Adventure</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog-single.html">Travel</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="category.html">Food</a></li>
+                <li><a class="dropdown-item" href="category.html">Travel</a></li>
+                <li><a class="dropdown-item" href="category.html">Lifestyle</a></li>
+                <li><a class="dropdown-item" href="category.html">Business</a></li>
+                <li><a class="dropdown-item" href="category.html">Adventure</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <main class="col-lg-8">
-        <article class="shadow p-3 mb-5 bg-body p-5">
-          <img src="images/big_image_1.jpg" alt="someone hold a laptop" class="img-fluid">
-          <h2 class="text-center fs-bold h1">Contact Us</h2>
-          <p class="text-center">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus
-            mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada
-            magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-            condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <form>
-            <div class="mb-3">
-              <label for="inputName" class="form-label">Name*</label>
-              <input type="text" class="form-control" id="inputName">
-            </div>
-            <div class="mb-3">
-              <label for="inputPhone" class="form-label">Phone*</label>
-              <input type="tel" class="form-control" id="inputPhone">
-            </div>
-            <div class="mb-3">
-              <label for="inputEmail" class="form-label">Email*</label>
-              <input type="email" class="form-control" id="inputEmail">
-            </div>
-            <div class="mb-3">
-              <label for="inputMessage" class="form-label">Write Message</label>
-              <textarea class="form-control" id="inputMessage"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary bg-dark">Send Message</button>
-          </form>
-        </article>
+      <main class="col-md-9 mt-4 pt-0">
+        <div class="container p-3 pt-0">
+          <article class="shadow bg-white p-5">
+            <img src="images/big_image_1.jpg" alt="someone hold a laptop" class="img-fluid">
+            <h2 class="text-center fw-bold h1 mb-0">Contact Us</h2>
+            <p class="text-center">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus
+              mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada
+              magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+              condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <form>
+              <div class="mb-3">
+                <label for="inputName" class="form-label">Name*</label>
+                <input type="text" class="form-control" id="inputName">
+              </div>
+              <div class="mb-3">
+                <label for="inputPhone" class="form-label">Phone*</label>
+                <input type="tel" class="form-control" id="inputPhone">
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email*</label>
+                <input type="email" class="form-control" id="inputEmail">
+              </div>
+              <div class="mb-3">
+                <label for="inputMessage" class="form-label">Write Message</label>
+                <textarea class="form-control" id="inputMessage"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary bg-dark">Send Message</button>
+            </form>
+          </article>
+        </div>
       </main>
 
 
-      <aside class="col-lg-4">
+      <aside class="col-md-3 mt-4 pt-0">
         <form>
           <div class="input-group mb-3">
             <button class="btn btn-muted border-secondary text-muted" type="button" id="search-bar"><svg
@@ -132,10 +129,10 @@
           </ul>
         </section>
 
-        <section class="shadow p-3 mb-5 bg-body">
+        <section class="shadow p-3 mb-5 bg-body rounded">
           <h2>Popular Posts</h2>
           <article class="row my-3">
-            <img class="img-fluid col-5" src="images/img_2.jpg" alt="flowers in vase">
+            <img class="col-5" src="images/img_2.jpg" alt="flowers in vase">
             <div class="col-7 ps-0">
               <time datetime="2018-03-15">March 15, 2018</time>
               <h3 class="fs-6">How to Find the Video Games of Your Youth</h3>
@@ -221,7 +218,9 @@
         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
       </svg> for Alyra</p>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
